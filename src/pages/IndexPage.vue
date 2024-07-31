@@ -61,7 +61,7 @@ import { ref } from 'vue'
 export default {
   setup () {
     const $q = useQuasar()
-    const id = ref("66.....")
+    const id = ref("6604101309")
     const name = ref("Kunthida")
     const surname = ref("Katekaew")
     const age = ref(null)
@@ -94,6 +94,8 @@ export default {
       },
 
       onReset () {
+        id.value = null
+        surname.value = null
         name.value = null
         age.value = null
         accept.value = false
