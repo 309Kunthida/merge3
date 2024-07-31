@@ -15,14 +15,6 @@
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Please type your name']"
       />
-      <q-input
-        filled
-        v-model="surname"
-        label="Your surname *"
-        hint="surname"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type your surname']"
-      />
 
       <q-input
         filled
@@ -56,14 +48,12 @@ export default {
     const $q = useQuasar()
     
     const name = ref("Poramat")
-    const surname = ref("Junyon")
     const age = ref(null)
     const accept = ref(false)
 
     return {
       
       name,
-      surname,
       age,
       accept,
 
